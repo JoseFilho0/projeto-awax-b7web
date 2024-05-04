@@ -255,3 +255,41 @@ header {
 .section-projects-filters li:first-child {
     border-left: 0;
 }
+.section-projects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-projects-photo {
+    width: 280px;
+}
+.section-projects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 165px;
+}
+.section-projects-photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-projects-photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.section-projects-photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.section-projects-photoarea:hover .section-projects-photoinfo {
+    display: flex;
+}
