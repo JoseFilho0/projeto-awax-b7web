@@ -500,62 +500,93 @@ header {
 .section-plan-button:hover {
     background-color: #b88d58;
 }
-.section-books-premium {
-    display: flex;
-    width: 1140px;
-    border-bottom: 1px solid #ccc;
+
+
+.premium {
+    background-color:#FFF !important;
+    border-top:1px solid #CCC;
 }
-.section-books-left {
-    flex: 1;
-    text-align: center;
-    margin-bottom: 20px;
+.premium .section-body {
+    max-width:initial;
 }
-.section-books-right {
-    flex: 1;
+.section-premium {
+    overflow:hidden;
 }
-.section-books-title {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.section-premium a {
+    margin-top:30px;
 }
-.section-books-title h5 {
-    font-size: 18px;
-    text-transform: uppercase;
+.section-premium .sliders {
+    width:1000vw;
+    height:100%;
 }
-.section-books-feature {
-    margin-top: 10px;
+.section-premium .slide {
+    width:100vw;
+    height:100%;
+    display:inline-block;
 }
-.section-books-feature p, 
-.section-books-feature h6 {
-    color: #999;
-    width: 450px;
-    line-height: 20px;
+.section-premium .slidearea {
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+    max-width:1140px;
+    border-bottom:1px solid #CCC;
+    margin:auto;
+    padding-bottom:40px;
 }
-.section-books-feature h6 {
-    font-size: 12px;
+.section-premium--left {
+    flex:1;
+    text-align:right;
 }
-.section-books .sliders-pointers {
-    margin-top: 30px;
-    height: 20px;
-    display: flex;
+.section-premium--left img {
+    width:300px;
+    margin-right:30px;
+}
+.section-premium--right {
+    flex:1;
+}
+.section-premium--item {
+    display:flex;
+    margin-bottom:20px;
+}
+.section-premium--item img {
+    width:20px;
+    height:20px;
+    margin-right:20px;
+}
+.section-premium--item div {
+    flex:1;
+    color:#999;
+    line-height:20px;
+}
+.section-premium--item div h4 {
+    color:#000;
+    font-size:17px;
+    font-weight:600;
+}
+
+.section-premium .sliders-pointers {
+    width:100vw;
+    height:20px;
+    display:flex;
     justify-content: center;
     align-items: center;
+    margin-top:40px;
 }
-.section-books .pointer {
-    width: 10px;
-    height: 10px;
-    margin-right: 3px;
-    margin-left: 3px;
-    border: 1px solid #b88d58;
-    border-radius: 50%;
-    cursor: pointer;
+.section-premium .pointer {
+    width:15px;
+    height:15px;
+    border:2px solid #B28756;
+    border-radius:8px;
+    margin-left:5px;
+    margin-right:5px;
+    cursor:pointer;
 }
-.section-books .pointer.active {
-    background-color: #b88d58;
+.section-premium .pointer.active {
+    background-color:#B28756;
 }
-.section-books-button {
-    text-align: center;
-}
+
+
 .section-facts {
     display: flex;
 }
